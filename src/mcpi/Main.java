@@ -43,6 +43,7 @@ public class Main extends Application {
             } else {
                 gc.setFill(Color.GREEN);
             }
+            // Convert from interval -1 1 to interval based on size of canvas
             double x = (point.getX() - MonteCarloPISimulator.MIN) * WIDTH / (MonteCarloPISimulator.MAX - MonteCarloPISimulator.MIN);
             double y = (point.getY() - MonteCarloPISimulator.MIN) * HEIGHT / (MonteCarloPISimulator.MAX - MonteCarloPISimulator.MIN);
             gc.fillOval(x - 2, y - 2, 5, 5);

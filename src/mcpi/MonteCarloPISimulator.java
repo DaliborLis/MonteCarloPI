@@ -14,6 +14,7 @@ public class MonteCarloPISimulator {
     public List<Point> generateRandomPoints(int count) {
         List<Point> points = new ArrayList<>(count);
         for (int i = 0; i < count; i++) {
+            // Create point in interval -1 to 1 for both coordinates
             points.add(new Point(MIN + (MAX - MIN) * random.nextDouble(), MIN + (MAX - MIN) * random.nextDouble()));
         }
         return points;
